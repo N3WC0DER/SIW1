@@ -1,0 +1,92 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.human4 {
+  position: absolute;
+  top: 6250px;
+  left: 0;
+}
+
+.group-8 {
+  margin-top: 195px;
+  height: 890px;
+
+  .feedback {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+      font-size: 47px;
+      text-transform: uppercase;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+
+      span {
+        font-size: 46px;
+        letter-spacing: 5px;
+        color: #8a6dc7;
+        font-weight: 400;
+        text-transform: none;
+      }
+    }
+
+    .description {
+      width: 450px;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 30px;
+      color: @primary-color;
+      font-weight: 600;
+      font-family: "Krub", serif;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 510px;
+      height: 68px;
+      background-color: transparent;
+      border: 3px solid #9172d1;
+      outline: none;
+
+      padding-left: 35px;
+      font-size: 17px;
+      letter-spacing: 1px;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+    }
+
+
+
+    input::placeholder, textarea::placeholder {
+      letter-spacing: 3px;
+      color: #6a6a6a;
+    }
+
+    .name {
+      margin-top: 90px;
+    }
+
+    .email {
+      margin-top: 55px;
+    }
+
+    .message {
+      margin-top: 50px;
+      width: 510px;
+      height: 178px;
+
+      padding-top: 15px;
+      padding-right: 35px;
+
+      resize: none;
+    }
+
+    .button-primary {
+      margin-top: 85px;
+    }
+  }
+}

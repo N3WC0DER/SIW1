@@ -1,0 +1,78 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.group-2 {
+  height: 750px;
+
+  margin-bottom: 120px;
+
+  .discover-your-skills::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: @primary-color;
+    margin-right: 20px;
+  }
+
+  .discover-your-skills {
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: @primary-color;
+    font-weight: 700;
+    font-family: "Krub", serif;
+    position: absolute;
+  }
+
+  .rotate270 {
+    transform-origin: left top 0;
+    rotate: -90deg;
+    top: 1400px;
+  }
+
+  .rotate90 {
+    transform-origin: left top 0;
+    rotate: 90deg;
+    top: 1170px;
+    right: -170px;
+  }
+
+  .accept-challenges {
+    margin-top: 100px;
+    padding-top: 145px;
+
+    background: url("../images/oval.png") no-repeat center center;
+    text-align: center;
+    height: 550px;
+
+    font-size: 83px;
+    letter-spacing: 4px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: @primary-color;
+    font-weight: 700;
+    font-family: "Krub", serif;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .footer {
+    cursor: default;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 49px;
+    letter-spacing: 2px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #252525;
+    font-weight: 700;
+    font-family: "Krub", serif;
+    text-align: center;
+  }
+}

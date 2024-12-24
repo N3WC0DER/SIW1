@@ -1,0 +1,115 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.group-7 {
+  margin-top: 145px;
+
+  .header {
+    line-height: 60px;
+    font-size: 93px;
+    text-transform: uppercase;
+    color: @primary-color;
+    font-weight: 700;
+    font-family: "Krub", serif;
+
+    text-align: center;
+
+    span {
+      font-size: 42px;
+      letter-spacing: 4px;
+      color: @secondary-color;
+      font-weight: 400;
+      text-transform: lowercase;
+    }
+  }
+
+  .users {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    text-align: center;
+
+    .name {
+      margin-top: 20px;
+
+      font-size: 19px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: #aeaeae;
+      font-weight: 700;
+      font-family: "Krub", serif;
+    }
+
+    .rate {
+      margin-top: 30px;
+
+      img {
+        margin: 0 5px;
+      }
+    }
+
+    .text::before {
+      content: url("../images/quote1.png");
+      position: relative;
+      bottom: 10px;
+      margin-right: 10px;
+    }
+
+    .text {
+      margin-top: 25px;
+
+      width: 230px;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 24px;
+      color: #aeaeae;
+      font-weight: 600;
+      font-family: "Krub", serif;
+      text-align: justify;
+
+      span {
+        text-align: center;
+      }
+    }
+
+    .text::after {
+      content: url("../images/quote2.png");
+      position: relative;
+      top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .arrows {
+    margin-top: 70px;
+
+    .wrapper-left, .wrapper-right {
+      display: flex;
+
+      img {
+        cursor: pointer;
+        padding: 10px;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+
+      img:hover {
+        scale: 110%;
+      }
+    }
+
+    .wrapper-right {
+      justify-content: end;
+    }
+
+    .wrapper-left {
+      justify-content: start;
+    }
+  }
+}

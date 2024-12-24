@@ -1,0 +1,168 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.group-3 {
+  height: 750px;
+
+  .header {
+
+    .text {
+      font-size: 38px;
+      letter-spacing: 4px;
+      color: @primary-color;
+      font-weight: 400;
+      font-family: "Krub", serif;
+
+      span {
+        font-size: 116px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+
+    .edition {
+      margin-top: 80px;
+      .square {
+        display: inline-block;
+        margin-right: 8px;
+        width: 12px;
+        height: 12px;
+        background-color: @primary-color;
+      }
+
+      text-align: end;
+      font-size: 17px;
+      letter-spacing: 3px;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+
+      .y2023 {
+        font-size: 29px;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  .courses {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .course::before {
+      position: relative;
+      left: -121px;
+
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-color: @primary-color;
+      color: @body-bg;
+
+      font-size: 21px;
+      line-height: 36px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: "Krub", serif;
+
+      padding-top: 5px;
+    }
+
+    .course:nth-of-type(1)::before {
+      content: '.01';
+    }
+    .course:nth-of-type(2)::before {
+      content: '.02';
+    }
+    .course:nth-of-type(3)::before {
+      content: '.03';
+    }
+    .course:nth-of-type(4)::before {
+      content: '.04';
+    }
+
+    .course {
+      width: 290px;
+      height: 375px;
+
+      border: 3px solid @primary-color;
+
+      text-align: center;
+
+      .header {
+        margin-top: 30px;
+
+        font-size: 33px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: @primary-color;
+        font-weight: 600;
+        font-family: "Krub", serif;
+
+        span {
+          color: @secondary-color;
+        }
+      }
+
+      .line {
+        margin: 15px auto;
+        background-color: @secondary-color;
+        min-height: 2px;
+        width: 55px;
+      }
+
+      .description {
+        margin: 0 auto;
+        width: 210px;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 27px;
+        color: @primary-color;
+        font-weight: 600;
+        font-family: "Krub", serif;
+      }
+
+      .button-primary {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .more-courses {
+      width: fit-content;
+      padding: 10px 0;
+      margin-top: 65px;
+
+      font-size: 16px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+
+      text-align: center;
+      cursor: pointer;
+
+      -moz-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      img {
+        margin-left: 55px;
+      }
+    }
+
+    .more-courses:hover {
+      scale: 105%;
+    }
+  }
+}

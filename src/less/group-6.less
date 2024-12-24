@@ -1,0 +1,66 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.group-6 {
+  margin-top: 230px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .ready1, .ready2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+
+    span {
+      font-size: 21px;
+      text-transform: uppercase;
+      color: @primary-color;
+      font-weight: 600;
+      font-family: "Krub", serif;
+    }
+
+    img {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+
+  .ready1 {
+    span {
+      text-align: right;
+    }
+
+    img {
+      margin-top: 20px;
+    }
+  }
+
+  .video {
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .video:hover {
+    scale: 101%;
+  }
+
+  .ready2 {
+    span {
+      text-align: left;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}

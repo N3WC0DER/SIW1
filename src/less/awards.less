@@ -1,0 +1,53 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.awards {
+  position: relative;
+  left: -57px;
+
+  width: 1470px;
+  height: 220px;
+  filter: drop-shadow(0 0 20px rgba(0,0,0,0.3));
+  background-color: @body-bg;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .happy-students, .certified-courses, .awards-received {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .plus {
+    font-size: 51px;
+    color: @secondary-color;
+    font-weight: 500;
+    font-family: "Oswald", serif;
+  }
+
+  .count {
+    font-size: 51px;
+    color: @primary-color;
+    font-weight: 500;
+    font-family: "Oswald", serif;
+  }
+
+  .text {
+    margin-left: 25px;
+
+    .first-line, .second-line {
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: @primary-color;
+      font-weight: 400;
+      font-family: "Krub", serif;
+    }
+
+    .second-line {
+      font-weight: 700;
+    }
+  }
+}

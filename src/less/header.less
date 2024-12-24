@@ -1,0 +1,117 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+header {
+  margin-top: 50px;
+  height: 40px;
+
+  .logo {
+    width: 128px;
+    height: 18px;
+    padding: 0;
+    font-size: 0;
+  }
+
+
+  .navbar {
+    border: 0;
+    margin: 0;
+
+    .nav::before {
+      content: none;
+    }
+
+    .nav {
+      margin-top: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      li {
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        a {
+          padding: 0;
+          font-size: @nav-item-font-size;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          color: @primary-color;
+          font-weight: 600;
+          font-family: @nav-item-font;
+        }
+      }
+
+      li:hover, .active {
+        text-decoration: underline;
+        text-underline-offset: 18px;
+        color: white;
+      }
+    }
+
+    .nav::after {
+      content: none;
+    }
+  }
+
+  .sign-in-btn {
+    text-align: center;
+
+    .btn {
+      width: 97px;
+      height: 33px;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      background-color: @primary-color;
+
+      font-size: @nav-item-font-size;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      color: @body-bg;
+      font-weight: 500;
+      font-family: @nav-item-font;
+
+      outline: 2px @primary-color solid;
+
+      -moz-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: @body-bg;
+      color: @primary-color;
+    }
+
+    .btn:focus {
+      width: 97px;
+      height: 33px;
+      outline-offset: -1px;
+    }
+  }
+
+  .burger-menu {
+    margin-top: 3px;
+
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .burger-menu:hover {
+    scale: 110%;
+  }
+}

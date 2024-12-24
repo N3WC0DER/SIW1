@@ -1,0 +1,44 @@
+@grid-columns: 18;
+
+@nav-item-font: Oswald, sans-serif;
+@nav-item-font-size: 17px;
+@nav-link-hover-bg: transparent;
+
+@body-bg: #181818;
+@font-family-base: Krub, sans-serif;
+
+@primary-color: #fff;
+@secondary-color: #a460f9;
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.button-primary {
+  border: 0;
+
+  outline: 3px solid @secondary-color;
+  outline-offset: -2px;
+
+  width: 125px;
+  height: 47px;
+  background-color: @secondary-color;
+
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: @primary-color;
+  font-weight: 700;
+  font-family: "Oswald", serif;
+
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: @body-bg;
+}

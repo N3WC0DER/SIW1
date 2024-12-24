@@ -1,0 +1,222 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+.main-section {
+  height: calc(810px - 40px - 50px);
+
+  .left-section {
+    height: 100%;
+
+    .ui {
+      cursor: default;
+      
+      margin-top: 130px;
+
+      font-size: 132px;
+      text-transform: uppercase;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+
+      span {
+        color: @secondary-color;
+      }
+    }
+
+    .beginners {
+      cursor: default;
+
+      transform-origin: left top 0;
+      rotate: -90deg;
+      width: fit-content;
+
+      position: absolute;
+      top: 600px;
+
+      font-size: 43px;
+      letter-spacing: 4px;
+      color: @primary-color;
+      font-weight: 400;
+      font-family: "Krub", serif;
+    }
+
+    .become {
+      cursor: default;
+      
+      position: absolute;
+      top: 450px;
+      left: 170px;
+
+      display: flex;
+
+      .square {
+        position: relative;
+        top: 7px;
+
+        display: inline-block;
+        margin-right: 8px;
+        width: 12px;
+        height: 12px;
+        background-color: @primary-color;
+      }
+      div {
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: @primary-color;
+        font-weight: 700;
+        font-family: "Krub", serif;
+      }
+    }
+
+    .left-arrow {
+      position: absolute;
+      top: 650px;
+      left: 350px;
+
+      width: 60px;
+      height: 25px;
+
+      -moz-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .left-arrow:hover {
+      scale: 110%;
+    }
+  }
+
+  .center-section {
+    height: 100%;
+
+    padding-top: 65px;
+
+    img {
+      position: relative;
+      left: 20px;
+    }
+  }
+
+  .right-section {
+    height: 100%;
+
+    .edition {
+      cursor: default;
+      position: absolute;
+      top: calc(215px - 40px - 50px);
+      right: -57px;
+
+      width: 190px;
+      height: 103px;
+      border: 2px solid #f1f1f1;
+      border-right: 0;
+      padding-top: 20px;
+      padding-left: 35px;
+      padding-bottom: 25px;
+
+      font-size: 17px;
+      letter-spacing: 3px;
+      color: @primary-color;
+      font-weight: 700;
+      font-family: "Krub", serif;
+
+      .y2023 {
+        font-size: 29px;
+        letter-spacing: 6px;
+        color: @primary-color;
+        font-weight: 700;
+        font-family: "Krub", serif;
+      }
+    }
+
+    .start-guides {
+      // 1000 385
+      position: absolute;
+      top: calc(385px - 40px - 50px);
+      left: 70px;
+
+      .header {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: @primary-color;
+        font-weight: 600;
+        font-family: "Krub", serif;
+      }
+      .text {
+        margin-top: 25px;
+
+        width: 280px;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 27px;
+        color: @primary-color;
+        font-weight: 600;
+        font-family: "Krub", serif;
+        text-align: justify;
+      }
+
+      .buttons {
+        margin-top: 40px;
+
+        .read-more {
+          text-decoration: none;
+          margin-left: 30px;
+          border: 0;
+
+          width: 125px;
+          height: 47px;
+          background-color: @body-bg;
+
+          font-size: 14px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: @primary-color;
+          font-weight: 700;
+          font-family: "Oswald", serif;
+
+          -moz-transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out;
+          -ms-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+        }
+
+        .read-more:hover {
+          scale: 105%;
+        }
+      }
+    }
+
+    .right-arrow {
+      position: absolute;
+      top: 650px;
+      right: 350px;
+
+      width: 60px;
+      height: 25px;
+
+      -moz-transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .right-arrow:hover {
+      scale: 110%;
+    }
+  }
+}
